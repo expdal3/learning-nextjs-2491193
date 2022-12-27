@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'    //import link to enable navigation
+import Link from "next/link"
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,59 +13,17 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to my eLearning site
-        </h1>
+        <h1 className={styles.title}>News Feed</h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-        
         <div className={styles.grid}>
-        <Link href="/learn/next">
-          <a className={styles.card}>
-            <h2>Learn NextJS &rarr;</h2>
-          </a>
+
+          <Link href="/news/">
+            <a className={styles.card}>
+              <h2>Top Stories &rarr;</h2>
+              <p>Read articles currently on the homepage</p>
+            </a>
           </Link>
-
-          <Link href="/learn/react">
-          <a className={styles.card}>
-            <h2>Learn ReactJS &rarr;</h2>
-          </a>
-
-          </Link>
-
-          <Link href="/learn/vue">
-          <a className={styles.card}>
-            <h2>Learn Vue &rarr;</h2>
-          </a>
-          </Link>
-
-          <Link href="/learn/angular">
-          <a className={styles.card}>
-            <h2>Learn Angular &rarr;</h2>
-          </a>
-
-          </Link>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+       
         </div>
       </main>
 
