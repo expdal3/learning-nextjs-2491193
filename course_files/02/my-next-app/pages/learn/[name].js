@@ -4,7 +4,8 @@ import topics from '../api/topics'
 export default function Learn() {
     const router = useRouter();
     const { name } = router.query
-    const topic = topics.find(topic => topic.id === name)
+    const topic = topics.find(topic => topic.id === name) //get the `topic` object where topic.id = name when
+                                                          // finding within `topics` array
     
     return (
     <>
